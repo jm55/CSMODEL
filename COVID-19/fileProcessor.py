@@ -16,14 +16,15 @@ filename = input("Enter Filename of CSV file: ")
 
 #prepare files both as file_obj and as df
 covid_df = pd.read_csv(filename)
+print("dataframe loaded from file...")
 #Raw file reading: make use of covid_df.readline() to retrieve a str line (as str) from
-
 
 date_values = covid_df['date'].unique()
 date_values = np.sort(date_values,kind='mergesort')
 dateCount = date_values.size
 print("dateCount:",dateCount,"\n")
-#print(date_values)
+print("earliest:",date_values[0])
+print("latest:",date_values[len(date_values)-2])
 
 print("original shape:",covid_df.shape)
 
@@ -59,7 +60,7 @@ print("data cleaned","\n")
 iso_code_whitelist = ['PHL','JPN','IDN','TWN','SGP','IND','OWID_WRL']
 print("whitelisted countries:",iso_code_whitelist)
 whitelisted = covid_df[covid_df['iso_code'].str.contains('PHL|JPN|IDN|TWN|SGP|IND|OWID_WRL',regex=True)]
-whitelisted.sort_values(by=['date'])
+whitelisted.sort_values(by=['iso_code','date'])
 whitelisted.to_csv("cleaned.csv")
 print("cleaned.csv created!")
 #last part, assumes modifications have been made into df, save it as csv via:
