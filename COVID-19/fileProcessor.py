@@ -53,13 +53,15 @@ for i in range(0,len(toRetainData),1):
 covid_df['continent'].fillna('OWID',inplace=True)
 print(covid_df.isnull().any())
 covid_df.to_csv("drop_checkpoint.csv",index=False)
-print("data cleaned")
+print("data cleaned","\n")
 
 #whitelisting: all observations that do not belong on the list are to be dropped
 iso_code_whitelist = ['PHL','JPN','IDN','TWN','SGP','IND','OWID_WRL']
+print("whitelisted countries:",iso_code_whitelist)
 whitelisted = covid_df[covid_df['iso_code'].str.contains('PHL|JPN|IDN|TWN|SGP|IND|OWID_WRL',regex=True)]
 whitelisted.sort_values(by=['date'])
 whitelisted.to_csv("cleaned.csv")
+print("cleaned.csv created!")
 #last part, assumes modifications have been made into df, save it as csv via:
     #df.to_csv('filename.csv')
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
