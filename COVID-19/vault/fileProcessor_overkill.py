@@ -29,7 +29,7 @@ def writeCheckpoint(df, filename): #Writes a given DataFrame to a CSV file
         df.to_csv(filename+".csv",index=False)
         print("Checkpoint Complete:",filename)
 def aggregator(src_df,iso_code,continent,location): #Aggregates the given DataFrame to a grouped version
-    tmp_df = pd.DataFrame(columns=raw_cols)
+    tmp_df = pd.DataFrame(columns=raw_cols) 
     for i in range(dateCount):
         sp_date = date_values[i] #Specified date
         filtered_df = src_df[src_df['date']==sp_date] #Series of nations with specified date
@@ -145,4 +145,4 @@ covid_df = pd.concat([group_df, covid_df, world_df])
 sortbydate(covid_df) #resort by date
 print(covid_df['iso_code'].unique())
 
-print("\nSCRIPT COMPLETE")
+print("\FILE PROCESSING COMPLETE")
