@@ -115,7 +115,8 @@ world_df = covid_df[covid_df['iso_code'].str.contains('OWID_WRL')] #OVERALL WORL
 covid_df = covid_df[covid_df['iso_code'].str.contains('PHL|BRN|KHM|IDN|SGP|LAO|THA|MYS|MMR|VNM',regex=True)] #ASEAN NATIONS; YOU CAN CHANGE LIST OF COUNTRIES TO FOCUS
 
 #TODO: FIND A WAY TO HAVE THE group_df FILLED WITH POPULATION DATA ON ALL ASEAN NATIONS (WHETHER PH IS INCLUDED OR NOT)
-group_pop = 0
+pop = covid_df[covid_df['date']==dateRange(covid_df)[1]]
+group_pop = pop['population'].sum()
 
 #DATA CLEANUP: NaN->0
 for i in range(0,len(raw_dataCol),1):
