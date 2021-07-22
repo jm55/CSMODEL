@@ -4,6 +4,7 @@
 #LIBRARIES
 import numpy as np
 import pandas as pd
+import re
 print("LIBRARIES LOADED\n")
 
 #GLOBAL VARIABLES
@@ -24,6 +25,7 @@ def fillZeros(size): #Returns a list of zeros from a specified size
     return np.zeros(size).tolist()
 def writeCheckpoint(df, filename): #Writes a given DataFrame to a CSV file
     if(checkpoint):
+        print("WRITING CHECKPOINT...")
         df.to_csv(filename+".csv",index=False)
         print("Checkpoint Complete:",filename)
 def aggregator(src_df,iso_code,continent,location): #Aggregates the given DataFrame to a grouped version
@@ -108,33 +110,39 @@ forCollective = ['total_cases','new_cases','new_cases_smoothed','total_deaths','
                 ,'new_cases_per_million','new_cases_smoothed_per_million','total_deaths_per_million','new_deaths_per_million','new_deaths_smoothed_per_million','total_vaccinations'
                 ,'people_vaccinated','people_fully_vaccinated','new_vaccinations','new_vaccinations_smoothed','total_vaccinations_per_hundred','people_vaccinated_per_hundred'
                 ,'people_fully_vaccinated_per_hundred','new_vaccinations_smoothed_per_million','population']
+targetCountries = ['PHL','BRN','KHM','IDN','SGP','LAO','THA','MYS','MMR','VNM'] #CHANGE CHOICES FOR TARGET COUNTRIES TO GROUP
 
 #FILTERING COUNTRIES
+print("FILTERING COUNTRIES...")
 ph_df = covid_df[covid_df['iso_code']=='PHL'] #PH ONLY
-world_df = covid_df[covid_df['iso_code'].str.contains('OWID_WRL')] #OVERALL WORLD DATA
-covid_df = covid_df[covid_df['iso_code'].str.contains('PHL|BRN|KHM|IDN|SGP|LAO|THA|MYS|MMR|VNM',regex=True)] #ASEAN NATIONS; YOU CAN CHANGE LIST OF COUNTRIES TO FOCUS
+world_df = covid_df[covid_df['iso_code'].str.contains('OWID_WRL')] #OVERALL WORLD DATA BY OWID
+covid_df = covid_df[covid_df['iso_code'].str.contains(re.compile('|'.join(targetCountries)),regex=True)] #ASEAN NATIONS; YOU CAN CHANGE LIST OF COUNTRIES TO FOCUS
 
-#TODO: FIND A WAY TO HAVE THE group_df FILLED WITH POPULATION DATA ON ALL ASEAN NATIONS (WHETHER PH IS INCLUDED OR NOT)
+#FIND TOTAL POPULATION OF ASEAN
 pop = covid_df[covid_df['date']==dateRange(covid_df)[1]]
+if(pop.shape[0] != len(targetCountries)): #REFERENCES TO targetCountries
+    print("COUNTRIES!=",len(targetCountries),"AT MAX DATE!")
+    exit()
 group_pop = pop['population'].sum()
 
 #DATA CLEANUP: NaN->0
+print("DATA CLEANUP (NaN->0)...")
 for i in range(0,len(raw_dataCol),1):
     covid_df.loc[covid_df[raw_dataCol[i]].isnull(),raw_dataCol[i]]=0
-print(covid_df.isnull().any())
 
 #READING CONENTS OF EACH OBSERVATION AVAILABLE OF ALL COUNTRIES AVAILABLE ON A GIVEN DATE 
 #NOT THE MOST EFFICIENT ALGO AS IT RUNS AT O(n*m)
 #WILL MAKE USE OF THE CURRENT LIST OF COUNTRIES AVAILABLE AT covid_df.
-group_df = aggregator(covid_df,"MDL_SEA",NaN,"Asia") #Will hold the resulting aggregation of ASEAN countries
 print("AGGREGATING ASEAN COUNTRIES...")
+group_df = aggregator(covid_df,"MDL_SEA",NaN,"Asia") #Will hold the resulting aggregation of ASEAN countries
 
 #ASEAN Checkpoint
 writeCheckpoint(group_df,"asean_checkpoint.csv")
 
-#merge with covid_df
+#COMBINING ALL SUBDATAFRAMES TO covid_df
+print("COMBINING DATAFRAMES...")
 covid_df = pd.concat([group_df, covid_df, world_df])
-covid_df = sortbydate(covid_df) #resort by date
-print(covid_df["iso_code"].unique())
+sortbydate(covid_df) #resort by date
+print(covid_df['iso_code'].unique())
 
-print("\n\nSCRIPT COMPLETE")
+print("\nSCRIPT COMPLETE")
