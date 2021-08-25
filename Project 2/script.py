@@ -10,6 +10,7 @@ class RuleMiner(object):
         """
         self.support_t = support_t
         self.confidence_t = confidence_t
+        print('RuleMiner Connected!')
 
     def get_support(self, data, itemset):
         """Returns the support for an itemset. The support of an itemset
@@ -41,16 +42,13 @@ class RuleMiner(object):
             If itemsets is equal to [[1, 2], [1, 3], [1, 5], [2, 6]], then the
             function should return [[1, 2, 3], [1, 2, 5], [1, 2, 6], [1, 3, 5]]
         """
-
         new_itemsets = []
-
         cur_num_items = len(itemsets[0])
-
+        #nature of both for loops is n^2
         if cur_num_items == 1:
             for i in range(len(itemsets)):
                 for j in range(i + 1, len(itemsets)):
                     new_itemsets.append(list(set(itemsets[i]) | set(itemsets[j])))
-
         else:
             for i in range(len(itemsets)):
                 for j in range(i + 1, len(itemsets)):
@@ -58,7 +56,6 @@ class RuleMiner(object):
                     combined_list.sort()
                     if len(combined_list) == cur_num_items + 1 and combined_list not in new_itemsets:
                         new_itemsets.append(combined_list)
-
         return new_itemsets
 
     def get_rules(self, itemset):
@@ -100,11 +97,9 @@ class RuleMiner(object):
             list -- list of frequent itemsets in the dataset.
         """
         # TODO: Complete this function.
-
         itemsets = [[i] for i in data.columns]
         old_itemsets = []
         flag = True
-
         while flag:
             new_itemsets = []
             for itemset in itemsets:
@@ -115,15 +110,12 @@ class RuleMiner(object):
                 # this class.
                 if self.support_t <= self.get_support(data,itemset):
                     new_itemsets.append(itemset)
-                pass
-
             if len(new_itemsets) != 0:
                 old_itemsets = new_itemsets
                 itemsets = self.merge_itemsets(new_itemsets)
             else:
                 flag = False
                 itemsets = old_itemsets
-
         return itemsets
 
     def get_confidence(self, data, rule):
