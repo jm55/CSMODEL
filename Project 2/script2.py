@@ -1,7 +1,7 @@
 import itertools
 
 class RuleMiner(object):
-
+    
     def __init__(self, support_t, confidence_t):
         """Class constructor for RuleMiner
         Arguments:
@@ -10,7 +10,6 @@ class RuleMiner(object):
         """
         self.support_t = support_t
         self.confidence_t = confidence_t
-        print('RuleMiner Connected!')
 
     def get_support(self, data, itemset):
         """Returns the support for an itemset. The support of an itemset
@@ -44,7 +43,8 @@ class RuleMiner(object):
         """
         new_itemsets = []
         cur_num_items = len(itemsets[0])
-        #nature of both for loops is n^2
+        print('merge_itemsets: itemsets:',len(itemsets))
+        print('merge_itemsets: cur_num_items ==', cur_num_items)
         if cur_num_items == 1:
             for i in range(len(itemsets)):
                 for j in range(i + 1, len(itemsets)):
@@ -56,6 +56,7 @@ class RuleMiner(object):
                     combined_list.sort()
                     if len(combined_list) == cur_num_items + 1 and combined_list not in new_itemsets:
                         new_itemsets.append(combined_list)
+        print('merge_itemsets: returning new_itemsets...')
         return new_itemsets
 
     def get_rules(self, itemset):
@@ -100,8 +101,10 @@ class RuleMiner(object):
         itemsets = [[i] for i in data.columns]
         old_itemsets = []
         flag = True
+
         while flag:
             new_itemsets = []
+            print('get_frequent_itemsets: getting support...')
             for itemset in itemsets:
                 # TODO: Get the support for each itemset and add the itemset to
                 # the list new_itemsets if the support for the itemset is
@@ -110,12 +113,15 @@ class RuleMiner(object):
                 # this class.
                 if self.support_t <= self.get_support(data,itemset):
                     new_itemsets.append(itemset)
+                pass
             if len(new_itemsets) != 0:
                 old_itemsets = new_itemsets
+                print('get_frequent_itemsets: merging itemsets...')
                 itemsets = self.merge_itemsets(new_itemsets)
             else:
                 flag = False
                 itemsets = old_itemsets
+        print('get_frequent_itemsets: returning itemsets...')
         return itemsets
 
     def get_confidence(self, data, rule):
@@ -164,7 +170,7 @@ class RuleMiner(object):
         print('getting frequent itemsets...')
         itemsets = self.get_frequent_itemsets(data)
         rules = []
-        print('getting rules...')
+        print('getting rule list...')
         for itemset in itemsets:
             # TODO: Get the rules for each frequent itemset and add to the
             # list rules
@@ -172,7 +178,7 @@ class RuleMiner(object):
             # class.
             rules.append(self.get_rules(itemset))
         association_rules = []
-        print('getting confidence...')
+        print('getting confidences...')
         for rule in rules: #for every rule
             # TODO: Get the confidence for each rule and add the rule to
             # the list association_rules if the confidence for the rule is
