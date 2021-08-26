@@ -161,8 +161,10 @@ class RuleMiner(object):
 
         # TODO: Call the get_frequent_itemsets() function that we have defined
         # in this class, and assign the result to the variable itemsets.
+        print('getting frequent itemsets...')
         itemsets = self.get_frequent_itemsets(data)
         rules = []
+        print('getting rules...')
         for itemset in itemsets:
             # TODO: Get the rules for each frequent itemset and add to the
             # list rules
@@ -170,6 +172,7 @@ class RuleMiner(object):
             # class.
             rules.append(self.get_rules(itemset))
         association_rules = []
+        print('getting confidence...')
         for rule in rules: #for every rule
             # TODO: Get the confidence for each rule and add the rule to
             # the list association_rules if the confidence for the rule is
