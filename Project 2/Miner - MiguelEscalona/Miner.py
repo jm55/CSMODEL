@@ -118,12 +118,13 @@ for i in range(len(rules)):
         right_rules.append(', '.join(rules[i][j][1]))
 
 #Turns aggregated lists into DFs and removes duplicates
-rules_Series = pd.DataFrame({'A':left_rules,'B':right_rules})
-rules_Series.drop_duplicates(inplace=True)
+rules_DF = pd.DataFrame({'A':left_rules,'B':right_rules})
+rules_DF.drop_duplicates(inplace=True)
+rules_DF.sort_values(by='A', ascending=False, inplace=True)
 
 #Saving DF as .csv file
 filename = 'output.csv'
-rules_Series.to_csv(filename)
+rules_DF.to_csv(filename)
 print('Rules file saved as:', filename)
 print('Time taken in mining:{:.2f}mins'.format(duration))
 print('=====================================')

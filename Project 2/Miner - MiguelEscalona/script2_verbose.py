@@ -53,9 +53,8 @@ class RuleMiner(object):
                 for j in range(i + 1, len(itemsets)):
                     new_itemsets.append(list(set(itemsets[i]) | set(itemsets[j])))
                     ctr = ctr + 1
-                percent = int(ctr/(n2)*100)
-                if percent % 25 == 0:
-                    print('merge_itemset: iter:{:.0f}/{:.0f} {:.2f}%'.format(ctr,n2,percent))
+                percent = ctr/(n2)*100
+                print('merge_itemset: iter:{:.0f}/{:.0f} {:.2f}%'.format(ctr,n2,percent))
         else:
             for i in range(len(itemsets)):
                 for j in range(i + 1, len(itemsets)):
@@ -64,9 +63,8 @@ class RuleMiner(object):
                     if len(combined_list) == cur_num_items + 1 and combined_list not in new_itemsets:
                         new_itemsets.append(combined_list)
                     ctr = ctr + 1
-                percent = int(ctr/(n2)*100)
-                if percent % 25 == 0:
-                    print('merge_itemset: iter:{:.0f}/{:.0f} {:.2f}%'.format(ctr,n2,percent))
+                percent = ctr/(n2)*100
+                print('merge_itemset: iter:{:.0f}/{:.0f} {:.2f}%'.format(ctr,n2,percent))
         print('merge_itemsets: returning new_itemsets...')
         return new_itemsets
 
