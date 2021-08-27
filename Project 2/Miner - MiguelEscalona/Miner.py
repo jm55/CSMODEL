@@ -95,7 +95,7 @@ print(main_df.info())
 #used for testing main_df of different sizes
 print('trimming main_df')
 n = 4 #Limits the number of columns/products listed
-main_df = main_df.iloc[:,0:n]
+#main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
 
 #benchmarks:
 #0.00 mins @ 5 items only
