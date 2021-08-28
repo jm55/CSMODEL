@@ -94,15 +94,15 @@ main_df.columns = itemList
 print(main_df.info())
 
 #used for testing main_df of different sizes
-print('trimming main_df')
-n = 17 #Limits the number of columns/products listed
+n = 15 #Limits the number of columns/products listed
 main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
+print('trimmed main_df:',n)
 
 #benchmarks:
 #0.00 mins @ 5 items only
 #0.02 mins @ 10 items only
 #0.90 mins @ 15 items only
-#0.00 mins @ 18 items only
+#3.60 mins @ 16 items only
 #target: 300 items
 
 start = time.time()
