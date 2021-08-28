@@ -29,6 +29,7 @@ miner = RuleMiner(10,.6) #10x0.6 configuration as specied in the instructions
 
 main_df = pd.read_csv('Dataset3.csv') #Dataset3 as chosen by the group
 main_df.drop(columns='Unnamed: 0', inplace=True) #Dropping the first column which is named as 'Unnamed: 0'
+main_df.fillna(0,inplace=True)
 
 #Changing list of columns; Please refer to Jupyter Notebook for source of itemlist
 #itemList is sorted by sales volumes, effectively indicating the most purchased items.
@@ -94,8 +95,8 @@ print(main_df.info())
 
 #used for testing main_df of different sizes
 print('trimming main_df')
-n = 4 #Limits the number of columns/products listed
-#main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
+n = 19 #Limits the number of columns/products listed
+main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
 
 #benchmarks:
 #0.00 mins @ 5 items only
