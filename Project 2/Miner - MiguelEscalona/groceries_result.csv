@@ -1,0 +1,7 @@
+,A,B
+0,"butter, whole milk",yogurt
+1,yogurt,"butter, whole milk"
+2,"butter, yogurt",whole milk
+3,whole milk,"butter, yogurt"
+4,"whole milk, yogurt",butter
+5,butter,"whole milk, yogurt"
