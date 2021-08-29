@@ -2,32 +2,10 @@ import pip
 import pandas as pd
 import time
 
-"""
-This script executes the necessary commands and functions
-for apriori data mining of Dataset3.csv.
-
-It was determined that the given dataset may take a huge amount
-of time from the mining process, thus an automation script was created
-in order to enable unsupervised data mining where the resulting 
-association rules will just be outputed as a file specified below.
-
-The file contents will come from the resulting association rules
-which was then turned into a DataFrame. Duplicates from the DataFrame 
-are then removed to make the resulting data more lean and easy to read.
-The structure of the resulting DF are as follows:
-        A           B
-0   itemsetA0   itemsetB0
-1   itemsetA1   itemsetB1
-2   itemsetA2   itemsetB2
-
-Refer to sample_result.csv for an example result which ran at a
-DF configuration of 100 rows 5 columns.
-"""
-
 from Collab import CollaborativeFiltering #Do change source file to which ever is faster if there exists as such
-
-miner = CollaborativeFiltering(config[0],config[1]) #10x0.6 configuration as specied in the instructions
-print('Miner_Collab Config:', config)
+k = 5
+miner = CollaborativeFiltering(k) #10x0.6 configuration as specied in the instructions
+print('Miner_Collab Config:', k)
 main_df = pd.read_csv('Dataset3.csv') #Dataset3 as chosen by the group
 main_df.drop(columns='Unnamed: 0', inplace=True) #Dropping the first column which is named as 'Unnamed: 0'
 main_df.fillna(0,inplace=True)
@@ -90,46 +68,18 @@ itemList = ['CARBONATED BEVERAGES','MILK','BEER/ALE/ALCOHOLIC CIDER','SALTY SNAC
             'VACUUM BAGS/BELTS','HOUSEHOLD LUBRICANTS','HOME PERMANENT/RELAXER KITS','BREATH FRESHENER SPRAYS/DROPS',
             'COSMETIC STORAGE','PHOTOGRAPHY SUPPLIES','CLOTH DYE','LARD','TOOTHBRUSH HOLDERS','PRODUCE RINSE',
             'BLANK AUDIO/VIDEO MEDIA','FZ COFFEE CREAMER']
-main_df.columns = itemList
+itemList = itemList[0:100] #limiting to entry size
+main_df.index = itemList
+print(main_df.info()) 
 
-print(main_df.info())
+from Collab import CollaborativeFiltering #Do change source file to which ever is faster if there exists as such
+k = 5
+miner = CollaborativeFiltering(k) #10x0.6 configuration as specied in the instructions
+print('Miner_Collab Config:', k)
 
-#used for testing main_df of different sizes
-#n = 17 #Limits the number of columns/products listed
-#main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
-#print('trimmed main_df:',n+1)
-
-#Benchmarks:
-#0.00 mins @ 5 items only [10,0.6]
-#0.01 mins @ 10 items only [10,0.6]
-#0.84 mins @ 15 items only [10,0.6]
-#3.06 mins @ 16 items only [10,0.6]
-#12.12 mins @ 17 items only [10,0.6]
-#49.00 mins @ 18 items only [10,0.6]
-#target: 300 items
-
-start = time.time()
-rules = miner.get_association_rules(main_df) #Calling actual miner function 
-duration = (time.time()-start)/60
-print('Apriori Data Mining Completed!')
-
-#Turns list into dataframe of items divided into two (A and B)
-left_rules = []
-right_rules = []
-for i in range(len(rules)):
-    for j in range(len(rules[i])):
-        left_rules.append(', '.join(rules[i][j][0]))
-        right_rules.append(', '.join(rules[i][j][1]))
-
-#Turns aggregated lists into DFs and removes duplicates
-rules_DF = pd.DataFrame({'A':left_rules,'B':right_rules})
-rules_DF.drop_duplicates(inplace=True)
-print(rules_DF.info())
-#rules_DF.sort_values(by='A', ascending=False, inplace=True)
-
-#Saving DF as .csv file
-filename = 'output.csv'
-rules_DF.to_csv(filename)
-print('Rules file saved as:', filename)
-print('Time taken in mining:{:.2f}mins'.format(duration))
-print('=====================================')
+print('========================================')
+for i in range(10):
+    item = main_df.loc[itemList[i], :]
+    drop_item = main_df.drop(itemList[i])
+    similar_items = miner.get_k_similar(drop_item, item)
+    print('Item {:}: {:}\nSimilar Items:\n{:}\n========================================'.format(i,itemList[i],similar_items[1].nlargest(3).round(4)))
