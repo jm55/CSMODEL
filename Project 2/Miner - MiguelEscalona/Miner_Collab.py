@@ -24,10 +24,10 @@ Refer to sample_result.csv for an example result which ran at a
 DF configuration of 100 rows 5 columns.
 """
 
-from script2_verbose import RuleMiner #Do change source file to which ever is faster if there exists as such
-config = [60,0.6]
-miner = RuleMiner(config[0],config[1]) #10x0.6 configuration as specied in the instructions
-print('Miner Config:', config)
+from Collab import CollaborativeFiltering #Do change source file to which ever is faster if there exists as such
+
+miner = CollaborativeFiltering(config[0],config[1]) #10x0.6 configuration as specied in the instructions
+print('Miner_Collab Config:', config)
 main_df = pd.read_csv('Dataset3.csv') #Dataset3 as chosen by the group
 main_df.drop(columns='Unnamed: 0', inplace=True) #Dropping the first column which is named as 'Unnamed: 0'
 main_df.fillna(0,inplace=True)
