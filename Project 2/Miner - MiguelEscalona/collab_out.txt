@@ -1,0 +1,79 @@
+Miner_Collab Config: 5
+<class 'pandas.core.frame.DataFrame'>
+Index: 100 entries, CARBONATED BEVERAGES to BABY FOOD
+Columns: 300 entries, 0 to 299
+dtypes: float64(300)
+memory usage: 235.2+ KB
+None
+Miner_Collab Config: 5
+========================================
+Item 0: CARBONATED BEVERAGES
+Similar Items:
+BAKING NEEDS                  0.1304
+PROCESSED FZ / RFG POULTRY    0.1256
+RFG FRESH EGGS                0.1211
+dtype: float64
+========================================
+Item 1: MILK
+Similar Items:
+MARGARINE/SPREADS             0.1288
+SNACK BARS/GRANOLA BARS       0.1270
+CREAM CHEESE/CR CHS SPREAD    0.1186
+dtype: float64
+========================================
+Item 2: BEER/ALE/ALCOHOLIC CIDER
+Similar Items:
+HOT CEREAL                   0.1387
+TOTAL NON-CHOCOLATE CANDY    0.1330
+VITAMINS                     0.1293
+dtype: float64
+========================================
+Item 3: SALTY SNACKS
+Similar Items:
+DIAPERS                      0.1379
+TOTAL NON-CHOCOLATE CANDY    0.1305
+SNACK BARS/GRANOLA BARS      0.1297
+dtype: float64
+========================================
+Item 4: FRESH BREAD & ROLLS
+Similar Items:
+FRANKFURTERS    0.2027
+CRACKERS        0.1214
+DIAPERS         0.1153
+dtype: float64
+========================================
+Item 5: NATURAL CHEESE
+Similar Items:
+WINE                          0.1424
+PIES & CAKES                  0.1415
+PROCESSED FZ / RFG POULTRY    0.1318
+dtype: float64
+========================================
+Item 6: WINE
+Similar Items:
+NATURAL CHEESE    0.1424
+VEGETABLES        0.1369
+BOTTLED WATER     0.1170
+dtype: float64
+========================================
+Item 7: COLD CEREAL
+Similar Items:
+MEXICAN FOODS    0.1244
+SUGAR            0.1228
+SEAFOOD -SS      0.1172
+dtype: float64
+========================================
+Item 8: YOGURT
+Similar Items:
+BOTTLED WATER     0.1278
+NATURAL CHEESE    0.1256
+FRANKFURTERS      0.1122
+dtype: float64
+========================================
+Item 9: FZ DINNERS/ENTREES
+Similar Items:
+ENERGY DRINKS                0.1520
+TOTAL NON-CHOCOLATE CANDY    0.1288
+MEXICAN SAUCE                0.1265
+dtype: float64
+========================================
