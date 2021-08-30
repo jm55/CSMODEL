@@ -25,7 +25,7 @@ DF configuration of 100 rows 5 columns.
 """
 
 from script2_verbose import RuleMiner #Do change source file to which ever is faster if there exists as such
-config = [60,0.6]
+config = [10,0.6]
 miner = RuleMiner(config[0],config[1]) #10x0.6 configuration as specied in the instructions
 print('Miner_Assoc Config:', config)
 main_df = pd.read_csv('Dataset3.csv') #Dataset3 as chosen by the group
@@ -90,22 +90,25 @@ itemList = ['CARBONATED BEVERAGES','MILK','BEER/ALE/ALCOHOLIC CIDER','SALTY SNAC
             'VACUUM BAGS/BELTS','HOUSEHOLD LUBRICANTS','HOME PERMANENT/RELAXER KITS','BREATH FRESHENER SPRAYS/DROPS',
             'COSMETIC STORAGE','PHOTOGRAPHY SUPPLIES','CLOTH DYE','LARD','TOOTHBRUSH HOLDERS','PRODUCE RINSE',
             'BLANK AUDIO/VIDEO MEDIA','FZ COFFEE CREAMER']
+
 main_df.columns = itemList
 
 print(main_df.info())
 
 #used for testing main_df of different sizes
-#n = 17 #Limits the number of columns/products listed
-#main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
-#print('trimmed main_df:',n+1)
+n = 15 #Limits the number of columns/products listed
+main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
+print('trimmed main_df:',len(main_df.columns))
 
 #Benchmarks:
 #0.00 mins @ 5 items only [10,0.6]
-#0.01 mins @ 10 items only [10,0.6]
-#0.84 mins @ 15 items only [10,0.6]
-#3.06 mins @ 16 items only [10,0.6]
-#12.12 mins @ 17 items only [10,0.6]
-#49.00 mins @ 18 items only [10,0.6]
+#0.02 mins @ 10 items only [10,0.6]
+#3.79 mins @ 15 items only [10,0.6]
+#12.12 mins @ 16 items only [10,0.6]
+#0.00 mins @ 5 items only [60,0.6]
+#0.01 mins @ 10 items only [60,0.6]
+#3.06 mins @ 15 items only [60,0.6]
+#12.12 mins @ 16 items only [60,0.6]
 #target: 300 items
 
 start = time.time()

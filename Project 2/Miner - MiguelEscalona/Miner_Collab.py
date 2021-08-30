@@ -12,62 +12,7 @@ main_df.fillna(0,inplace=True)
 
 #Changing list of columns; Please refer to Jupyter Notebook for source of itemlist
 #itemList is sorted by sales volumes, effectively indicating the most purchased items.
-itemList = ['CARBONATED BEVERAGES','MILK','BEER/ALE/ALCOHOLIC CIDER','SALTY SNACKS','FRESH BREAD & ROLLS',
-            'NATURAL CHEESE','WINE','COLD CEREAL','YOGURT','FZ DINNERS/ENTREES','COFFEE','BOTTLED WATER',
-            'ICE CREAM/SHERBET','CRACKERS','RFG FRESH EGGS','RFG JUICES/DRINKS','BREAKFAST MEATS','COOKIES',
-            'CIGARETTES','SOUP','RFG SALAD/COLESLAW','TOTAL CHOCOLATE CANDY','LUNCHEON MEATS','BOTTLED JUICES - SS',
-            'TOILET TISSUE','SPIRITS/LIQUOR','DOG FOOD','FZ PIZZA','FZ NOVELTIES','FZ / RFG POULTRY','FZ SEAFOOD',
-            'SNACK BARS/GRANOLA BARS','DINNER SAUSAGE','SPICES/SEASONINGS','VEGETABLES','CREAMS/CREAMERS',
-            'LAUNDRY DETERGENT','SHORTENING & OIL','CAT FOOD','BABY FORMULA/ELECTROLYTES','RFG MEAT','PROCESSED CHEESE',
-            'PAPER TOWELS','BUTTER/BUTTER BLENDS','SNACK NUTS/SEEDS/CORN NUTS','MEXICAN FOODS','PROCESSED FZ / RFG POULTRY',
-            'PASTRY/DOUGHNUTS','FZ PLAIN VEGETABLES','RFG SIDE DISHES','FZ BREAKFAST FOOD','FRANKFURTERS',
-            'TOTAL NON-CHOCOLATE CANDY','SPORTS DRINKS','SPAGHETTI/ITALIAN SAUCE','PASTA','PICKLES/RELISH/OLIVES',
-            'FOOD & TRASH BAGS','CANNED/BOTTLED FRUIT','RICE','SEAFOOD -SS','FZ MEAT','NUT BUTTER',
-            'TEA/COFFEE READY-TO-DRINK','SALAD DRESSINGS - SS','BAKING NEEDS','VITAMINS','DOUGH/BISCUIT DOUGH - RFG',
-            'BAKERY SNACKS','CUPS & PLATES','DRY PACKAGED DINNERS','MAYONNAISE','SS DINNERS','SOAP','SS MEAT & RFG HAM',
-            'ENERGY DRINKS','CREAM CHEESE/CR CHS SPREAD','TOMATO PRODUCTS','FZ POTATOES/ONIONS','PIES & CAKES',
-            'WEIGHT CONTROL','MEXICAN SAUCE','ALL OTHER SAUCES','SUGAR','BAKING MIXES','DISH DETERGENT','MARGARINE/SPREADS',
-            'RFG ENTREES','HOUSEHOLD CLEANER','JELLIES/JAMS/HONEY','FZ APPETIZERS/SNACK ROLLS','DIAPERS','LUNCHES - RFG',
-            'COLD/ALLERGY/SINUS TABLETS','GRAVY/SAUCE MIXES','HOT CEREAL','INTERNAL ANALGESICS','TEA - BAGS/LOOSE',
-            'SOUR CREAM','BABY FOOD','COTTAGE CHEESE','PET SUPPLIES','ASEPTIC JUICES','TOOTHPASTE','MUSTARD & KETCHUP',
-            'RFG TEAS/COFFEE','CAT/DOG LITTER','SPREADS - RFG','FLOUR/MEAL','GUM','FZ BREAD/FZ DOUGH','SHAMPOO',
-            'GASTROINTESTINAL - TABLETS','SANITARY NAPKINS/TAMPONS','DRIED FRUIT','FACIAL TISSUE','DEODORANT','BAKING NUTS',
-            'FZ FRUIT','POPCORN/POPCORN OIL','RFG WHIPPED TOPPINGS','SYRUP/MOLASSES','ENGLISH MUFFINS','RFG DIPS','BATTERIES',
-            'CANNED JUICES - SS','AIR FRESHENERS','SKIN CARE','FZ PIES','FOILS & WRAPS','BAKED BEANS/CANNED BREAD','BLADES',
-            'CLEANING TOOLS/MOPS/BROOMS','DESSERTS - RFG','ASIAN FOOD','TOOTHBRUSH/DENTAL ACCESORIES','FZ DESSERTS/TOPPING',
-            'DRY FRUIT SNACKS','GELATIN/PUDDING PRD AND MIXES','BARBEQUE SAUCE','MISC. SNACKS','DRY BEANS/VEGETABLES',
-            'HAIR CONDITIONER','DRINK MIXES','TOASTER PASTRIES/TARTS','SEAFOOD - RFG','NON-FRUIT DRINKS - SS','CHARCOAL',
-            'VINEGAR','MOIST TOWELETTES','LAUNDRY CARE','DRIED MEAT SNACKS','MOUTHWASH','SUGAR SUBSTITUTES',
-            'EYE/CONTACT LENS CARE PRODUCT','OTHER RFG PRODUCTS','FZ POT PIES','CANDLES','FABRIC SOFTENER LIQUID',
-            'PAPER NAPKINS','KITCHEN STORAGE','LIGHT BULBS','HAND & BODY LOTION','SALAD DRESSING - RFG',
-            'EVAPORATED/CONDENSED MILK','ADULT INCONTINENCE','SALAD TOPPINGS','MILK FLAVORING/COCOA MIXES',
-            'COLD/ALLERGY/SINUS LIQUIDS','COFFEE CREAMER - SS','INSTANT POTATOES','FROZEN & DRY ICE','HAIR COLORING',
-            'BREADCRUMBS/BATTERS','FZ PASTA','FOIL PANS','SMOKELESS TOBACCO','PANCAKE MIXES','DESSERT TOPPINGS',
-            'BAKED GOODS - RFG','PASTA - RFG','FZ SIDE DISHES','FIRST AID TREATMENT','BLEACH','FROSTING','JUICES - FROZEN',
-            'FIRST AID ACCESSORIES','COSMETICS - EYE','SPONGES & SCOURING PADS','DIP/DIP MIXES - SS',
-            'GASTROINTESTINAL - LIQUID','FABRIC SOFTENER SHEETS','HAIR STYLING GEL/MOUSSE','LIQUID DRINK ENHANCERS',
-            'PIZZA - RFG','STUFFING MIXES','DISPOSABLE TABLEWARE','FZ PREPARED VEGETABLES','SUNTAN PRODUCTS',
-            'PICKLES/RELISH - RFG','HOUSEHOLD CLEANER CLOTHS','RUG/UPHOLSTERY/FABRIC TREATMT','COSMETICS - FACIAL',
-            'TEA - INSTANT TEA MIXES','FIRELOG/FIRESTARTER/FIREWOOD','PEST CONTROL','CROUTONS','STEAK/WORCESTERSHIRE SAUCE',
-            'COUGH DROPS','COCKTAIL MIXES','HAIR SPRAY/SPRITZ','COSMETICS - NAIL','PREMIXED COCKTAILS/COOLERS',
-            'BABY ACCESSORIES','HAIR ACCESSORIES','RICE/POPCORN CAKES','BABY NEEDS','MARSHMALLOWS','OFFICE PRODUCTS',
-            'CHEESECAKES','FOOT CARE PRODUCTS','MISC HEALTH REMEDIES','NASAL PRODUCTS','LIP TREATMENT','COUGH SYRUP',
-            'FEMININE NEEDS','SHAVING CREAM','COFFEE FILTERS','ALL OTHER BREAKFAST FOOD','COTTON BALLS/SWABS','SOCKS',
-            'DENTURE PRODUCTS','SLEEPING REMEDIES','CIGARS','PIZZA PRODUCTS','OUTDOOR INSECT/RODENT CONTROL',
-            'FZ CORN ON THE COB','RFG TORTLLA/EGGRLL/WONTN WRAP','COSMETIC - ACCESSORIES','CHILDRENS ART SUPPLIES',
-            'SHAVING LOTION/MENS FRAGRANCE','ICE CREAM CONES/MIXES','GLOVES','LIGHTERS','WRITING INSTRUMENTS',
-            'BOTTLES','COSMETICS - LIP','EXTERNAL ANALGESIC RUBS','RAZORS','OTHER FROZEN FOODS','SEXUAL HEALTH',
-            'AUTOMOBILE FLUIDS/ANTIFREEZE','ANTI-SMOKING PRODUCTS','FLOOR CLEANERS/WAX REMOVERS','WATER SOFTENERS/TREATMENT',
-            'MOTOR OIL','WATER FILTERS/DEVICES','CHARCOAL LIGHTER FLUIDS','FURNITURE POLISH','FAMILY PLANNING',
-            'FRAGRANCES - WOMENS','HEMORRHOIDAL REMEDIES','BAKING CUPS/PAPER','POWDERED MILK','FRT & VEG PRESERVATIVE/PECTIN',
-            'BATH PRODUCTS','OTHER GROOMING SUPPLIES','PANTYHOSE/NYLONS','OUTDOOR/LAWN FRTLZR/WDKLLR','HOME HEALTH CARE/KITS',
-            'ALL OTHER TOBACCO PRODUCTS','HOUSEHOLD PLASTICS','BATH/BODY SCRUBBERS/MASSAGERS','SHOE POLISH & ACCESSORIES',
-            'POOL/SPA CHEMICALS','TIGHTS','AUTOMOBILE WAXES/POLISHES','MEAT PIES','PERSONAL THERMOMETERS',
-            'ELECTRONIC SMOKING DEVICES','FLASHLIGHTS','SMOKING ACCESSORIES','MISC HEALTH REMEDY TABLETS',
-            'JUICE/DRINK CONCENTRATE - SS','MATCHES','PLAYING CARDS','HAIR GROWTH PRODUCTS','GLAZED FRUIT',
-            'VACUUM BAGS/BELTS','HOUSEHOLD LUBRICANTS','HOME PERMANENT/RELAXER KITS','BREATH FRESHENER SPRAYS/DROPS',
-            'COSMETIC STORAGE','PHOTOGRAPHY SUPPLIES','CLOTH DYE','LARD','TOOTHBRUSH HOLDERS','PRODUCE RINSE',
-            'BLANK AUDIO/VIDEO MEDIA','FZ COFFEE CREAMER']
+itemList = ['Game of Thrones','Band Brothers','Breaking Bad','Planet Earth','The Wire','Rick and Morty','Avatar: Last Airbender','Sherlock','Firefly','Death Note','Dark Knight','True Detective','Fargo','Lord Rings: Return King','Arrested Development','Black Mirror','Stranger Things',': Fellowship Ring','Office','Rome','Inception','House Cards','Narcos','Westworld','Six Feet Under',': Two Towers','M.D.','Doctor Who','Its Always Sunny in Philadelphia','Dexter','Daredevil','Better Call Saul','Sen to Chihiro no kamikakushi','Cidade de Deus','Mad Men','Sons Anarchy','Parks Recreation','Boardwalk Empire','Suits','Vikings','Interstellar','Mr. Robot','Punisher','La casa papel','Handmaids Tale','Gladiator','Memento','Pianist','Supernatural','Departed','Prestige','Community','Spartacus: Blood Sand','Intouchables','Hannibal','Whiplash','Mindhunter','Scrubs','24','Oldeuboi','Lost','Prison Break','Lives Others','WALL-E','Fringe','Modern Family','3 Idiots','Rises','Django Unchained','Coco','Snatch','Requiem for a Dream','Amiele','Eternal Sunshine Spotless Mind','Batman Begins','How I Met Your Mother','Californication','Inglourious Basterds','Up','Walking Dead','Toy Story ','Homeland','Jagten','Beautiful ','Der Untergang','Hauru ugoku shiro','V Vendetta','Big Bang Theory','Pans Labyrinth','There Will Be ','El secreto sus ojos','Warrior','Wolf Street','Inside Out','Room','Three Billboards Outside Ebbing','Missouri','Amores perros','Faa yeung nin wa','Monsters Inc.']
 itemList = itemList[0:100] #limiting to entry size
 main_df.index = itemList
 print(main_df.info()) 
@@ -78,8 +23,7 @@ miner = CollaborativeFiltering(k) #10x0.6 configuration as specied in the instru
 print('Miner_Collab Config:', k)
 
 print('========================================')
-for i in range(10):
-    item = main_df.loc[itemList[i], :]
-    drop_item = main_df.drop(itemList[i])
-    similar_items = miner.get_k_similar(drop_item, item)
-    print('Item {:}: {:}\nSimilar Items:\n{:}\n========================================'.format(i,itemList[i],similar_items[1].nlargest(3).round(4)))
+item = main_df.loc[itemList[0], :]
+drop_item = main_df.drop(itemList[0])
+similar_items = miner.get_k_similar(drop_item, item)
+print('Item:{:}\nSimilar Items:\n{:}\n========================================'.format(itemList[0],similar_items[1].nlargest(5).round(4)))

@@ -61,8 +61,8 @@ class RuleMiner(object):
                     combined_list.sort()
                     if len(combined_list) == cur_num_items + 1 and combined_list not in new_itemsets:
                             new_itemsets.append(combined_list)
-                #percent = i*j/(n2)*100
-                #print('merge_itemset(else): {:.2f}%'.format(percent))
+                percent = i*j/(n2)*100
+                print('merge_itemset(else): {:.2f}%'.format(percent))
         print('merge_itemsets: returning new_itemsets...')
         return new_itemsets
 
