@@ -9,7 +9,7 @@
 7,Unbreakable,2000,7.3,62.0,335334
 8,Meet the Parents,2000,7.0,73.0,290126
 9,Mission: Impossible II,2000,6.1,,286465
-10,"O Brother, Where Art Thou?",2000,7.8,69.0,261119
+10,"O Brother,Where Art Thou?",2000,7.8,69.0,261119
 11,Gone in Sixty Seconds,2000,6.5,,243247
 12,Wo hu cang long,2000,7.9,93.0,237498
 13,The Patriot,2000,7.2,63.0,234473
@@ -17,7 +17,7 @@
 15,Pitch Black,2000,7.1,,212215
 16,Scary Movie,2000,6.2,,212038
 17,Final Destination,2000,6.7,,207634
-18,"Me, Myself & Irene",2000,6.6,,207542
+18,"Me,Myself & Irene",2000,6.6,,207542
 19,The Beach,2000,6.6,,205329
 20,Amores perros,2000,8.1,83.0,204468
 21,Traffic,2000,7.6,86.0,184710
@@ -34,7 +34,7 @@
 32,Erin Brockovich,2000,7.3,73.0,156488
 33,Road Trip,2000,6.5,,146988
 34,The Perfect Storm,2000,6.4,,145539
-35,"Dude, Where's My Car?",2000,5.5,,127520
+35,"Dude,Where's My Car?",2000,5.5,,127520
 36,Hollow Man,2000,5.7,,113534
 37,Scream 3,2000,5.6,,112795
 38,Billy Elliot,2000,7.7,74.0,112664
@@ -59,7 +59,7 @@
 57,Unbreakable,2000,7.3,62.0,335334
 58,Meet the Parents,2000,7.0,73.0,290126
 59,Mission: Impossible II,2000,6.1,,286465
-60,"O Brother, Where Art Thou?",2000,7.8,69.0,261119
+60,"O Brother,Where Art Thou?",2000,7.8,69.0,261119
 61,Gone in Sixty Seconds,2000,6.5,,243247
 62,Wo hu cang long,2000,7.9,93.0,237498
 63,The Patriot,2000,7.2,63.0,234473
@@ -67,7 +67,7 @@
 65,Pitch Black,2000,7.1,,212215
 66,Scary Movie,2000,6.2,,212038
 67,Final Destination,2000,6.7,,207634
-68,"Me, Myself & Irene",2000,6.6,,207542
+68,"Me,Myself & Irene",2000,6.6,,207542
 69,The Beach,2000,6.6,,205329
 70,Amores perros,2000,8.1,83.0,204468
 71,Traffic,2000,7.6,86.0,184710
@@ -84,7 +84,7 @@
 82,Erin Brockovich,2000,7.3,73.0,156488
 83,Road Trip,2000,6.5,,146988
 84,The Perfect Storm,2000,6.4,,145539
-85,"Dude, Where's My Car?",2000,5.5,,127520
+85,"Dude,Where's My Car?",2000,5.5,,127520
 86,Hollow Man,2000,5.7,,113534
 87,Scream 3,2000,5.6,,112795
 88,Billy Elliot,2000,7.7,74.0,112664
@@ -101,7 +101,7 @@
 99,Frequency,2000,7.4,67.0,93428
 100,The Lord of the Rings: The Fellowship of the Ring,2001,8.8,92.0,1478783
 101,A Beautiful Mind,2001,8.2,72.0,756786
-102,"Monsters, Inc.",2001,8.1,78.0,724068
+102,"Monsters,Inc.",2001,8.1,78.0,724068
 103,Donnie Darko,2001,8.1,88.0,688260
 104,Amélie,2001,8.3,69.0,641467
 105,Harry Potter and the Sorcerer's Stone,2001,7.6,64.0,558883
@@ -151,7 +151,7 @@
 149,Y tu mamá también,2001,7.7,88.0,105537
 150,The Lord of the Rings: The Fellowship of the Ring,2001,8.8,92.0,1478783
 151,A Beautiful Mind,2001,8.2,72.0,756786
-152,"Monsters, Inc.",2001,8.1,78.0,724068
+152,"Monsters,Inc.",2001,8.1,78.0,724068
 153,Donnie Darko,2001,8.1,88.0,688260
 154,Amélie,2001,8.3,69.0,641467
 155,Harry Potter and the Sorcerer's Stone,2001,7.6,64.0,558883
@@ -407,7 +407,7 @@
 405,Harry Potter and the Prisoner of Azkaban,2004,7.9,82.0,478915
 406,The Notebook,2004,7.9,,465610
 407,Shaun of the Dead,2004,7.9,76.0,462350
-408,"I, Robot",2004,7.1,,456657
+408,"I,Robot",2004,7.1,,456657
 409,Lost,2004,8.4,,448478
 410,Troy,2004,7.2,,444908
 411,The Butterfly Effect,2004,7.7,,415542
@@ -457,7 +457,7 @@
 455,Harry Potter and the Prisoner of Azkaban,2004,7.9,82.0,478915
 456,The Notebook,2004,7.9,,465610
 457,Shaun of the Dead,2004,7.9,76.0,462350
-458,"I, Robot",2004,7.1,,456657
+458,"I,Robot",2004,7.1,,456657
 459,Lost,2004,8.4,,448478
 460,Troy,2004,7.2,,444908
 461,The Butterfly Effect,2004,7.7,,415542
@@ -512,7 +512,7 @@
 510,King Kong,2005,7.2,81.0,361574
 511,The 40 Year Old Virgin,2005,7.1,73.0,357675
 512,Supernatural,2005,8.5,,345774
-513,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",2005,6.9,75.0,334831
+513,"The Chronicles of Narnia: The Lion,the Witch and the Wardrobe",2005,6.9,75.0,334831
 514,Madagascar,2005,6.9,,323945
 515,Wedding Crashers,2005,7.0,64.0,310828
 516,Brokeback Mountain,2005,7.7,87.0,295425
@@ -562,7 +562,7 @@
 560,King Kong,2005,7.2,81.0,361574
 561,The 40 Year Old Virgin,2005,7.1,73.0,357675
 562,Supernatural,2005,8.5,,345774
-563,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",2005,6.9,75.0,334831
+563,"The Chronicles of Narnia: The Lion,the Witch and the Wardrobe",2005,6.9,75.0,334831
 564,Madagascar,2005,6.9,,323945
 565,Wedding Crashers,2005,7.0,64.0,310828
 566,Brokeback Mountain,2005,7.7,87.0,295425
@@ -934,7 +934,7 @@
 932,Mr. Nobody,2009,7.8,63.0,193670
 933,G.I. Joe: The Rise of Cobra,2009,5.8,,189762
 934,The Ugly Truth,2009,6.5,,187398
-935,"I Love You, Man",2009,7.0,70.0,183933
+935,"I Love You,Man",2009,7.0,70.0,183933
 936,Cloudy with a Chance of Meatballs,2009,7.0,66.0,182670
 937,Coraline,2009,7.7,80.0,176052
 938,Drag Me to Hell,2009,6.6,83.0,175315
@@ -984,7 +984,7 @@
 982,Mr. Nobody,2009,7.8,63.0,193670
 983,G.I. Joe: The Rise of Cobra,2009,5.8,,189762
 984,The Ugly Truth,2009,6.5,,187398
-985,"I Love You, Man",2009,7.0,70.0,183933
+985,"I Love You,Man",2009,7.0,70.0,183933
 986,Cloudy with a Chance of Meatballs,2009,7.0,66.0,182670
 987,Coraline,2009,7.7,80.0,176052
 988,Drag Me to Hell,2009,6.6,83.0,175315
@@ -1110,7 +1110,7 @@
 1108,Rise of the Planet of the Apes,2011,7.6,68.0,467487
 1109,Source Code,2011,7.5,74.0,445963
 1110,Pirates of the Caribbean: On Stranger Tides,2011,6.6,,440411
-1111,"Crazy, Stupid, Love.",2011,7.4,68.0,431726
+1111,"Crazy,Stupid,Love.",2011,7.4,68.0,431726
 1112,The Hangover Part II,2011,6.5,,426659
 1113,Mission: Impossible - Ghost Protocol,2011,7.4,73.0,422185
 1114,Warrior,2011,8.2,71.0,398258
@@ -1160,7 +1160,7 @@
 1158,Rise of the Planet of the Apes,2011,7.6,68.0,467487
 1159,Source Code,2011,7.5,74.0,445963
 1160,Pirates of the Caribbean: On Stranger Tides,2011,6.6,,440411
-1161,"Crazy, Stupid, Love.",2011,7.4,68.0,431726
+1161,"Crazy,Stupid,Love.",2011,7.4,68.0,431726
 1162,The Hangover Part II,2011,6.5,,426659
 1163,Mission: Impossible - Ghost Protocol,2011,7.4,73.0,422185
 1164,Warrior,2011,8.2,71.0,398258
@@ -1639,7 +1639,7 @@
 1637,The Magnificent Seven,2016,6.9,,164714
 1638,The Promise,2016,6.1,,163625
 1639,Assassin's Creed,2016,5.8,,162852
-1640, Game of Thrones,2011,9.9,,158728
+1640,Game of Thrones,2011,9.9,,158728
 1641,The Secret Life of Pets,2016,6.5,61.0,157088
 1642,Sausage Party,2016,6.2,66.0,155591
 1643,Captain Fantastic,2016,7.9,72.0,153785
@@ -1689,7 +1689,7 @@
 1687,The Magnificent Seven,2016,6.9,,164714
 1688,The Promise,2016,6.1,,163625
 1689,Assassin's Creed,2016,5.8,,162852
-1690, Game of Thrones,2011,9.9,,158728
+1690,Game of Thrones,2011,9.9,,158728
 1691,The Secret Life of Pets,2016,6.5,61.0,157088
 1692,Sausage Party,2016,6.2,66.0,155591
 1693,Captain Fantastic,2016,7.9,72.0,153785
@@ -1710,7 +1710,7 @@
 1708,Blade Runner 2049,2017,8.0,81.0,361924
 1709,Baby Driver,2017,7.6,86.0,347028
 1710,It,2017,7.4,69.0,337559
-1711,"Three Billboards Outside Ebbing, Missouri",2017,8.2,88.0,321785
+1711,"Three Billboards Outside Ebbing,Missouri",2017,8.2,88.0,321785
 1712,Justice League,2017,6.5,,313060
 1713,The Shape of Water,2017,7.3,87.0,288998
 1714,John Wick: Chapter 2,2017,7.5,75.0,261092
@@ -1739,7 +1739,7 @@
 1737,Bright,2017,6.4,,143302
 1738,The Punisher,2017,8.6,,135366
 1739,Valerian and the City of a Thousand Planets,2017,6.5,,134808
-1740,"I, Tonya",2017,7.5,77.0,131868
+1740,"I,Tonya",2017,7.5,77.0,131868
 1741,Darkest Hour,2017,7.4,75.0,129492
 1742,Baywatch,2017,5.6,,128131
 1743,American Made,2017,7.2,65.0,124810
@@ -1760,7 +1760,7 @@
 1758,Blade Runner 2049,2017,8.0,81.0,361924
 1759,Baby Driver,2017,7.6,86.0,347028
 1760,It,2017,7.4,69.0,337559
-1761,"Three Billboards Outside Ebbing, Missouri",2017,8.2,88.0,321785
+1761,"Three Billboards Outside Ebbing,Missouri",2017,8.2,88.0,321785
 1762,Justice League,2017,6.5,,313060
 1763,The Shape of Water,2017,7.3,87.0,288998
 1764,John Wick: Chapter 2,2017,7.5,75.0,261092
@@ -1789,7 +1789,7 @@
 1787,Bright,2017,6.4,,143302
 1788,The Punisher,2017,8.6,,135366
 1789,Valerian and the City of a Thousand Planets,2017,6.5,,134808
-1790,"I, Tonya",2017,7.5,77.0,131868
+1790,"I,Tonya",2017,7.5,77.0,131868
 1791,Darkest Hour,2017,7.4,75.0,129492
 1792,Baywatch,2017,5.6,,128131
 1793,American Made,2017,7.2,65.0,124810
