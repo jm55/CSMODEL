@@ -28,7 +28,7 @@ from script2_verbose import RuleMiner #Do change source file to which ever is fa
 config = [10,0.6]
 miner = RuleMiner(config[0],config[1]) #10x0.6 configuration as specied in the instructions
 print('Miner_Assoc Config:', config)
-main_df = pd.read_csv('Dataset3.csv') #Dataset3 as chosen by the group
+main_df = pd.read_csv('Dataset10.csv',header=None)
 main_df.drop(columns='Unnamed: 0', inplace=True) #Dropping the first column which is named as 'Unnamed: 0'
 main_df.fillna(0,inplace=True)
 
@@ -91,14 +91,11 @@ itemList = ['CARBONATED BEVERAGES','MILK','BEER/ALE/ALCOHOLIC CIDER','SALTY SNAC
             'COSMETIC STORAGE','PHOTOGRAPHY SUPPLIES','CLOTH DYE','LARD','TOOTHBRUSH HOLDERS','PRODUCE RINSE',
             'BLANK AUDIO/VIDEO MEDIA','FZ COFFEE CREAMER']
 
-main_df.columns = itemList
+main_df.columns = itemList[0:len(main_df.columns)]
 
 print(main_df.info())
 
-#used for testing main_df of different sizes
-n = 15 #Limits the number of columns/products listed
-main_df = main_df.iloc[:,0:n] #Comment this out to enable full main_df size.
-print('trimmed main_df:',len(main_df.columns))
+#used for testing main_df of different sizesprint('trimmed main_df:',len(main_df.columns))
 
 #Benchmarks:
 #0.00 mins @ 5 items only [10,0.6]
