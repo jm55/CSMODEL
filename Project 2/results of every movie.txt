@@ -1,0 +1,1322 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Columns: 300 entries, 0 to 299
+dtypes: float64(300)
+memory usage: 234.5 KB
+Rating Value Range For User 0:
+ 0  
+1.0    20
+2.0    18
+3.0    11
+4.0    10
+5.0    21
+dtype: int64
+
+Min=1 and Max=5
+<class 'pandas.core.frame.DataFrame'>
+Index: 100 entries, Game of Thrones (2011) to American Horror Story (2011)
+Columns: 302 entries, 0 to imdb
+dtypes: float64(301), int64(1)
+memory usage: 236.7+ KB
+None
+Miner_Collab k value: 5
+========================================
+Item 0: Game of Thrones (2011)
+========================================
+Similar Items:
+The Punisher (2017)        0.1499
+Mindhunter (2017)          0.1254
+The Walking Dead (2010)    0.1166
+Modern Family (2009)       0.1158
+Stranger Things (2016)     0.1028
+dtype: float64
+========================================
+
+
+========================================
+Item 1: Breaking Bad (2008)
+========================================
+Similar Items:
+Black Mirror (2011)      0.1553
+Suits (2011)             0.1453
+Whiplash (2014)          0.1233
+Mad Men (2007)           0.1051
+Six Feet Under (2001)    0.0972
+dtype: float64
+========================================
+
+
+========================================
+Item 2: Band of Brothers (2001)
+========================================
+Similar Items:
+Gladiator (2000)          0.1436
+Vikings (2013)            0.1208
+Donnie Darko (2001)       0.1087
+The Dark Knight (2008)    0.1028
+Fringe (2008)             0.0966
+dtype: float64
+========================================
+
+
+========================================
+Item 3: Planet Earth (2006)
+========================================
+Similar Items:
+Amélie (2001)                  0.1932
+Oldeuboi (2003)                0.1079
+Inglourious Basterds (2009)    0.1063
+Narcos (2015)                  0.1060
+The Prestige (2006)            0.0987
+dtype: float64
+========================================
+
+
+========================================
+Item 4: The Wire (2002)
+========================================
+Similar Items:
+The Lord of the Rings: The Two Towers (2002)                0.1370
+Interstellar (2014)                                         0.1180
+The Departed (2006)                                         0.1095
+Breaking Bad (2008)                                         0.0953
+The Lord of the Rings: The Fellowship of the Ring (2001)    0.0920
+dtype: float64
+========================================
+
+
+========================================
+Item 5: Rick and Morty (2013)
+========================================
+Similar Items:
+True Detective (2014)      0.1312
+Snatch (2000)              0.1171
+La casa de papel (2017)    0.1156
+Sherlock (2010)            0.0928
+A Beautiful Mind (2001)    0.0921
+dtype: float64
+========================================
+
+
+========================================
+Item 6: Sherlock (2010)
+========================================
+Similar Items:
+Oldeuboi (2003)           0.1297
+The Dark Knight (2008)    0.1235
+Amélie (2001)             0.1025
+Rick and Morty (2013)     0.0928
+Donnie Darko (2001)       0.0923
+dtype: float64
+========================================
+
+
+========================================
+Item 7: Avatar: The Last Airbender (2003)
+========================================
+Similar Items:
+Donnie Darko (2001)                             0.1892
+Eternal Sunshine of the Spotless Mind (2004)    0.1235
+How I Met Your Mother (2005)                    0.1059
+Mad Max: Fury Road (2015)                       0.1031
+Narcos (2015)                                   0.0949
+dtype: float64
+========================================
+
+
+========================================
+Item 8: True Detective (2014)
+========================================
+Similar Items:
+Toy Story 3 (2010)             0.1503
+Rick and Morty (2013)          0.1312
+The Pianist (2002)             0.0880
+Parks and Recreation (2009)    0.0822
+Californication (2007)         0.0807
+dtype: float64
+========================================
+
+
+========================================
+Item 9: Fargo (2014)
+========================================
+Similar Items:
+Warrior (2011)         0.1415
+24 (2001)              0.1398
+Supernatural (2005)    0.1298
+Lost (2004)            0.1192
+Amélie (2001)          0.1081
+dtype: float64
+========================================
+
+
+========================================
+Item 10: Firefly (2002)
+========================================
+Similar Items:
+Lost (2004)                0.1558
+The Walking Dead (2010)    0.1260
+Homeland (2011)            0.1154
+Batman Begins (2005)       0.1020
+Rome (2005)                0.0976
+dtype: float64
+========================================
+
+
+========================================
+Item 11: Death Note: Desu nôto (2006)
+========================================
+Similar Items:
+Community (2009)                                            0.1271
+The Office (2005)                                           0.1235
+How I Met Your Mother (2005)                                0.1141
+Snatch (2000)                                               0.1059
+The Lord of the Rings: The Fellowship of the Ring (2001)    0.0994
+dtype: float64
+========================================
+
+
+========================================
+Item 12: The Dark Knight (2008)
+========================================
+Similar Items:
+A Beautiful Mind (2001)          0.1607
+El secreto de sus ojos (2009)    0.1504
+24 (2001)                        0.1386
+The Help (2011)                  0.1243
+Sherlock (2010)                  0.1235
+dtype: float64
+========================================
+
+
+========================================
+Item 13: Arrested Development (2003)
+========================================
+Similar Items:
+Doctor Who (2005)                                       0.1317
+The Lord of the Rings: The Return of the King (2003)    0.0906
+Stranger Things (2016)                                  0.0842
+Black Mirror (2011)                                     0.0839
+The Wire (2002)                                         0.0836
+dtype: float64
+========================================
+
+
+========================================
+Item 14: Stranger Things (2016)
+========================================
+Similar Items:
+Supernatural (2005)                         0.1458
+Suits (2011)                                0.1364
+Game of Thrones (2011)                      0.1028
+Dexter (2006)                               0.0957
+It's Always Sunny in Philadelphia (2005)    0.0955
+dtype: float64
+========================================
+
+
+========================================
+Item 15: The Lord of the Rings: The Return of the King (2003)
+========================================
+Similar Items:
+Inception (2010)                                   0.1612
+Spartacus: Blood and Sand (2010)                   0.1282
+Arrested Development (2003)                        0.0906
+Three Billboards Outside Ebbing,Missouri (2017)    0.0853
+Death Note: Desu nôto (2006)                       0.0835
+dtype: float64
+========================================
+
+
+========================================
+Item 16: Black Mirror (2011)
+========================================
+Similar Items:
+Breaking Bad (2008)             0.1553
+Interstellar (2014)             0.1140
+Inside Out (2015)               0.1133
+A Beautiful Mind (2001)         0.0974
+How I Met Your Mother (2005)    0.0895
+dtype: float64
+========================================
+
+
+========================================
+Item 17: Narcos (2015)
+========================================
+Similar Items:
+A Beautiful Mind (2001)    0.1412
+Warrior (2011)             0.1165
+The Help (2011)            0.1154
+Amores perros (2000)       0.1096
+Planet Earth (2006)        0.1060
+dtype: float64
+========================================
+
+
+========================================
+Item 18: The Office (2005)
+========================================
+Similar Items:
+Community (2009)                                   0.1796
+Three Billboards Outside Ebbing,Missouri (2017)    0.1389
+Death Note: Desu nôto (2006)                       0.1235
+Memento (2000)                                     0.1181
+Inception (2010)                                   0.1134
+dtype: float64
+========================================
+
+
+========================================
+Item 19: Inception (2010)
+========================================
+Similar Items:
+The Lord of the Rings: The Return of the King (2003)    0.1612
+Six Feet Under (2001)                                   0.1538
+Mr. Robot (2015)                                        0.1383
+Snatch (2000)                                           0.1230
+The Office (2005)                                       0.1134
+dtype: float64
+========================================
+
+
+========================================
+Item 20: The Lord of the Rings: The Fellowship of the Ring (2001)
+========================================
+Similar Items:
+Californication (2007)          0.1386
+Scrubs (2001)                   0.1136
+Homeland (2011)                 0.1070
+The Punisher (2017)             0.0996
+Death Note: Desu nôto (2006)    0.0994
+dtype: float64
+========================================
+
+
+========================================
+Item 21: Westworld (2016)
+========================================
+Similar Items:
+3 Idiots (2009)                                 0.1279
+Donnie Darko (2001)                             0.1262
+Mad Max: Fury Road (2015)                       0.0874
+The Lord of the Rings: The Two Towers (2002)    0.0867
+Fargo (2014)                                    0.0859
+dtype: float64
+========================================
+
+
+========================================
+Item 22: Rome (2005)
+========================================
+Similar Items:
+Jagten (2012)              0.1481
+Boardwalk Empire (2010)    0.1456
+Amélie (2001)              0.1389
+Better Call Saul (2015)    0.1284
+La casa de papel (2017)    0.1151
+dtype: float64
+========================================
+
+
+========================================
+Item 23: House of Cards (2013)
+========================================
+Similar Items:
+How I Met Your Mother (2005)    0.1592
+Community (2009)                0.1157
+Breaking Bad (2008)             0.0930
+Room (2015)                     0.0925
+Memento (2000)                  0.0910
+dtype: float64
+========================================
+
+
+========================================
+Item 24: Better Call Saul (2015)
+========================================
+Similar Items:
+Rome (2005)                         0.1284
+WALL·E (2008)                       0.1201
+Hauru no ugoku shiro (2004)         0.1091
+V for Vendetta (2005)               0.1034
+Spartacus: Blood and Sand (2010)    0.1031
+dtype: float64
+========================================
+
+
+========================================
+Item 25: The Lord of the Rings: The Two Towers (2002)
+========================================
+Similar Items:
+The Wire (2002)        0.1370
+Interstellar (2014)    0.1343
+Homeland (2011)        0.1271
+Mad Men (2007)         0.1094
+3 Idiots (2009)        0.1049
+dtype: float64
+========================================
+
+
+========================================
+Item 26: Doctor Who (2005)
+========================================
+Similar Items:
+Arrested Development (2003)    0.1317
+Mad Max: Fury Road (2015)      0.1079
+WALL·E (2008)                  0.1066
+Hauru no ugoku shiro (2004)    0.0915
+The Help (2011)                0.0776
+dtype: float64
+========================================
+
+
+========================================
+Item 27: It's Always Sunny in Philadelphia (2005)
+========================================
+Similar Items:
+Toy Story 3 (2010)            0.1454
+The Help (2011)               0.1188
+Before Sunset (2004)          0.1074
+The Big Bang Theory (2007)    0.1068
+The Punisher (2017)           0.1034
+dtype: float64
+========================================
+
+
+========================================
+Item 28: Six Feet Under (2001)
+========================================
+Similar Items:
+Inception (2010)        0.1538
+Supernatural (2005)     0.1256
+WALL·E (2008)           0.1220
+Amores perros (2000)    0.1087
+Breaking Bad (2008)     0.0972
+dtype: float64
+========================================
+
+
+========================================
+Item 29: House M.D. (2004)
+========================================
+Similar Items:
+Hauru no ugoku shiro (2004)    0.1048
+The Dark Knight (2008)         0.0759
+Sherlock (2010)                0.0736
+Amélie (2001)                  0.0724
+3 Idiots (2009)                0.0705
+dtype: float64
+========================================
+
+
+========================================
+Item 30: Dexter (2006)
+========================================
+Similar Items:
+Amélie (2001)                     0.1168
+Boardwalk Empire (2010)           0.1111
+Inside Out (2015)                 0.1093
+The Wolf of Wall Street (2013)    0.1090
+Scrubs (2001)                     0.1087
+dtype: float64
+========================================
+
+
+========================================
+Item 31: Suits (2011)
+========================================
+Similar Items:
+Amores perros (2000)              0.1827
+Memento (2000)                    0.1520
+Breaking Bad (2008)               0.1453
+Stranger Things (2016)            0.1364
+The Wolf of Wall Street (2013)    0.1112
+dtype: float64
+========================================
+
+
+========================================
+Item 32: Parks and Recreation (2009)
+========================================
+Similar Items:
+24 (2001)                       0.1601
+Pan's Labyrinth (2006)          0.0970
+The Dark Knight Rises (2012)    0.0846
+True Detective (2014)           0.0822
+The Office (2005)               0.0821
+dtype: float64
+========================================
+
+
+========================================
+Item 33: The Handmaid's Tale (2017)
+========================================
+Similar Items:
+Snatch (2000)                                   0.1148
+The Punisher (2017)                             0.1126
+Requiem for a Dream (2000)                      0.1107
+The Big Bang Theory (2007)                      0.1070
+The Lord of the Rings: The Two Towers (2002)    0.0960
+dtype: float64
+========================================
+
+
+========================================
+Item 34: Vikings (2013)
+========================================
+Similar Items:
+The Help (2011)            0.1520
+La casa de papel (2017)    0.1387
+Band of Brothers (2001)    0.1208
+Sons of Anarchy (2008)     0.0931
+Donnie Darko (2001)        0.0916
+dtype: float64
+========================================
+
+
+========================================
+Item 35: La casa de papel (2017)
+========================================
+Similar Items:
+Vikings (2013)                  0.1387
+Sons of Anarchy (2008)          0.1199
+American Horror Story (2011)    0.1178
+Rick and Morty (2013)           0.1156
+Rome (2005)                     0.1151
+dtype: float64
+========================================
+
+
+========================================
+Item 36: Interstellar (2014)
+========================================
+Similar Items:
+The Lord of the Rings: The Two Towers (2002)    0.1343
+Californication (2007)                          0.1320
+The Wire (2002)                                 0.1180
+The Punisher (2017)                             0.1165
+Black Mirror (2011)                             0.1140
+dtype: float64
+========================================
+
+
+========================================
+Item 37: Mad Men (2007)
+========================================
+Similar Items:
+Donnie Darko (2001)                             0.1370
+Inside Out (2015)                               0.1156
+The Lord of the Rings: The Two Towers (2002)    0.1094
+Breaking Bad (2008)                             0.1051
+Scrubs (2001)                                   0.0870
+dtype: float64
+========================================
+
+
+========================================
+Item 38: The Punisher (2017)
+========================================
+Similar Items:
+Mindhunter (2017)          0.1822
+Californication (2007)     0.1640
+Game of Thrones (2011)     0.1499
+Inside Out (2015)          0.1462
+The Walking Dead (2010)    0.1193
+dtype: float64
+========================================
+
+
+========================================
+Item 39: Mr. Robot (2015)
+========================================
+Similar Items:
+Inception (2010)              0.1383
+Snatch (2000)                 0.1368
+Amélie (2001)                 0.1024
+La casa de papel (2017)       0.0934
+The Big Bang Theory (2007)    0.0930
+dtype: float64
+========================================
+
+
+========================================
+Item 40: Cidade de Deus (2002)
+========================================
+Similar Items:
+Donnie Darko (2001)           0.1989
+There Will Be Blood (2007)    0.1279
+WALL·E (2008)                 0.1243
+The Lives of Others (2006)    0.0970
+Mindhunter (2017)             0.0957
+dtype: float64
+========================================
+
+
+========================================
+Item 41: Sons of Anarchy (2008)
+========================================
+Similar Items:
+La casa de papel (2017)    0.1199
+Inside Out (2015)          0.1116
+Suits (2011)               0.1103
+3 Idiots (2009)            0.1066
+Warrior (2011)             0.0980
+dtype: float64
+========================================
+
+
+========================================
+Item 42: Boardwalk Empire (2010)
+========================================
+Similar Items:
+Rome (2005)                       0.1456
+The Wolf of Wall Street (2013)    0.1323
+Before Sunset (2004)              0.1191
+Dexter (2006)                     0.1111
+Coco (2017)                       0.0973
+dtype: float64
+========================================
+
+
+========================================
+Item 43: Sen to Chihiro no kamikakushi (2001)
+========================================
+Similar Items:
+The Help (2011)           0.1709
+WALL·E (2008)             0.1286
+Community (2009)          0.1250
+The Dark Knight (2008)    0.1175
+Donnie Darko (2001)       0.0992
+dtype: float64
+========================================
+
+
+========================================
+Item 44: The Departed (2006)
+========================================
+Similar Items:
+Modern Family (2009)                                        0.1279
+The Office (2005)                                           0.1134
+The Wire (2002)                                             0.1095
+Mindhunter (2017)                                           0.0995
+The Lord of the Rings: The Fellowship of the Ring (2001)    0.0969
+dtype: float64
+========================================
+
+
+========================================
+Item 45: The Prestige (2006)
+========================================
+Similar Items:
+Der Untergang (2004)             0.1342
+El secreto de sus ojos (2009)    0.1084
+Planet Earth (2006)              0.0987
+Firefly (2002)                   0.0937
+Up (2009)                        0.0784
+dtype: float64
+========================================
+
+
+========================================
+Item 46: Whiplash (2014)
+========================================
+Similar Items:
+Coco (2017)                    0.1467
+Californication (2007)         0.1440
+Hauru no ugoku shiro (2004)    0.1258
+Breaking Bad (2008)            0.1233
+V for Vendetta (2005)          0.1129
+dtype: float64
+========================================
+
+
+========================================
+Item 47: Supernatural (2005)
+========================================
+Similar Items:
+Der Untergang (2004)      0.1586
+Stranger Things (2016)    0.1458
+Fargo (2014)              0.1298
+Six Feet Under (2001)     0.1256
+Mindhunter (2017)         0.1181
+dtype: float64
+========================================
+
+
+========================================
+Item 48: Spartacus: Blood and Sand (2010)
+========================================
+Similar Items:
+Toy Story 3 (2010)                                      0.1340
+The Lord of the Rings: The Return of the King (2003)    0.1282
+Better Call Saul (2015)                                 0.1031
+Californication (2007)                                  0.1008
+Jagten (2012)                                           0.0961
+dtype: float64
+========================================
+
+
+========================================
+Item 49: The Pianist (2002)
+========================================
+Similar Items:
+Three Billboards Outside Ebbing,Missouri (2017)    0.0906
+True Detective (2014)                              0.0880
+Cidade de Deus (2002)                              0.0838
+The Lives of Others (2006)                         0.0742
+Coco (2017)                                        0.0733
+dtype: float64
+========================================
+
+
+========================================
+Item 50: Community (2009)
+========================================
+Similar Items:
+The Office (2005)                       0.1796
+Californication (2007)                  0.1330
+Death Note: Desu nôto (2006)            0.1271
+Sen to Chihiro no kamikakushi (2001)    0.1250
+How I Met Your Mother (2005)            0.1221
+dtype: float64
+========================================
+
+
+========================================
+Item 51: The Intouchables (2011)
+========================================
+Similar Items:
+Lost (2004)                   0.1124
+Der Untergang (2004)          0.1012
+The Lives of Others (2006)    0.0936
+Stranger Things (2016)        0.0933
+Firefly (2002)                0.0933
+dtype: float64
+========================================
+
+
+========================================
+Item 52: Gladiator (2000)
+========================================
+Similar Items:
+Band of Brothers (2001)    0.1436
+3 Idiots (2009)            0.1354
+The Office (2005)          0.1047
+Dexter (2006)              0.1033
+Fargo (2014)               0.0991
+dtype: float64
+========================================
+
+
+========================================
+Item 53: Mindhunter (2017)
+========================================
+Similar Items:
+The Punisher (2017)                                0.1822
+Three Billboards Outside Ebbing,Missouri (2017)    0.1452
+Game of Thrones (2011)                             0.1254
+Supernatural (2005)                                0.1181
+Prison Break (2005)                                0.1083
+dtype: float64
+========================================
+
+
+========================================
+Item 54: Memento (2000)
+========================================
+Similar Items:
+Suits (2011)              0.1520
+The Office (2005)         0.1181
+Game of Thrones (2011)    0.1026
+WALL·E (2008)             0.0985
+House of Cards (2013)     0.0910
+dtype: float64
+========================================
+
+
+========================================
+Item 55: WALL·E (2008)
+========================================
+Similar Items:
+V for Vendetta (2005)                   0.1310
+Sen to Chihiro no kamikakushi (2001)    0.1286
+Cidade de Deus (2002)                   0.1243
+Six Feet Under (2001)                   0.1220
+Modern Family (2009)                    0.1211
+dtype: float64
+========================================
+
+
+========================================
+Item 56: Lost (2004)
+========================================
+Similar Items:
+Firefly (2002)             0.1558
+Oldeuboi (2003)            0.1306
+Fargo (2014)               0.1192
+The Intouchables (2011)    0.1124
+Community (2009)           0.1025
+dtype: float64
+========================================
+
+
+========================================
+Item 57: Django Unchained (2012)
+========================================
+Similar Items:
+There Will Be Blood (2007)           0.1086
+The Wolf of Wall Street (2013)       0.0928
+Mindhunter (2017)                    0.0920
+True Detective (2014)                0.0721
+Avatar: The Last Airbender (2003)    0.0717
+dtype: float64
+========================================
+
+
+========================================
+Item 58: Fringe (2008)
+========================================
+Similar Items:
+The Wolf of Wall Street (2013)    0.1122
+Inglourious Basterds (2009)       0.1110
+Hauru no ugoku shiro (2004)       0.1025
+Band of Brothers (2001)           0.0966
+Gladiator (2000)                  0.0948
+dtype: float64
+========================================
+
+
+========================================
+Item 59: 3 Idiots (2009)
+========================================
+Similar Items:
+Mad Max: Fury Road (2015)    0.1838
+V for Vendetta (2005)        0.1619
+Gladiator (2000)             0.1354
+Westworld (2016)             0.1279
+Before Sunset (2004)         0.1125
+dtype: float64
+========================================
+
+
+========================================
+Item 60: Scrubs (2001)
+========================================
+Similar Items:
+The Lord of the Rings: The Fellowship of the Ring (2001)    0.1136
+American Horror Story (2011)                                0.1116
+The Big Bang Theory (2007)                                  0.1105
+Dexter (2006)                                               0.1087
+Inglourious Basterds (2009)                                 0.0942
+dtype: float64
+========================================
+
+
+========================================
+Item 61: Oldeuboi (2003)
+========================================
+Similar Items:
+Lost (2004)                     0.1306
+Sherlock (2010)                 0.1297
+The Dark Knight Rises (2012)    0.1283
+Before Sunset (2004)            0.1140
+Planet Earth (2006)             0.1079
+dtype: float64
+========================================
+
+
+========================================
+Item 62: The Dark Knight Rises (2012)
+========================================
+Similar Items:
+Snatch (2000)       0.1524
+Oldeuboi (2003)     0.1283
+Room (2015)         0.1244
+Homeland (2011)     0.1000
+Westworld (2016)    0.0846
+dtype: float64
+========================================
+
+
+========================================
+Item 63: The Lives of Others (2006)
+========================================
+Similar Items:
+Cidade de Deus (2002)           0.0970
+The Intouchables (2011)         0.0936
+Inception (2010)                0.0866
+Death Note: Desu nôto (2006)    0.0864
+Memento (2000)                  0.0861
+dtype: float64
+========================================
+
+
+========================================
+Item 64: Prison Break (2005)
+========================================
+Similar Items:
+Mindhunter (2017)                                       0.1083
+24 (2001)                                               0.1056
+Fargo (2014)                                            0.0982
+La casa de papel (2017)                                 0.0956
+The Lord of the Rings: The Return of the King (2003)    0.0809
+dtype: float64
+========================================
+
+
+========================================
+Item 65: Modern Family (2009)
+========================================
+Similar Items:
+The Departed (2006)        0.1279
+WALL·E (2008)              0.1211
+Game of Thrones (2011)     0.1158
+The Walking Dead (2010)    0.1015
+The Intouchables (2011)    0.0927
+dtype: float64
+========================================
+
+
+========================================
+Item 66: Coco (2017)
+========================================
+Similar Items:
+Whiplash (2014)            0.1467
+Narcos (2015)              0.1001
+Boardwalk Empire (2010)    0.0973
+Firefly (2002)             0.0965
+Interstellar (2014)        0.0924
+dtype: float64
+========================================
+
+
+========================================
+Item 67: 24 (2001)
+========================================
+Similar Items:
+Parks and Recreation (2009)    0.1601
+Fargo (2014)                   0.1398
+The Dark Knight (2008)         0.1386
+A Beautiful Mind (2001)        0.1235
+Amélie (2001)                  0.1222
+dtype: float64
+========================================
+
+
+========================================
+Item 68: Inglourious Basterds (2009)
+========================================
+Similar Items:
+Inside Out (2015)               0.1244
+Fringe (2008)                   0.1110
+American Horror Story (2011)    0.1081
+The Punisher (2017)             0.1065
+Planet Earth (2006)             0.1063
+dtype: float64
+========================================
+
+
+========================================
+Item 69: How I Met Your Mother (2005)
+========================================
+Similar Items:
+House of Cards (2013)                0.1592
+Homeland (2011)                      0.1334
+Community (2009)                     0.1221
+Death Note: Desu nôto (2006)         0.1141
+Avatar: The Last Airbender (2003)    0.1059
+dtype: float64
+========================================
+
+
+========================================
+Item 70: Up (2009)
+========================================
+Similar Items:
+Amélie (2001)              0.1300
+A Beautiful Mind (2001)    0.1117
+Fringe (2008)              0.0867
+The Prestige (2006)        0.0784
+The Help (2011)            0.0748
+dtype: float64
+========================================
+
+
+========================================
+Item 71: Amélie (2001)
+========================================
+Similar Items:
+Planet Earth (2006)            0.1932
+Rome (2005)                    0.1389
+Up (2009)                      0.1300
+Hauru no ugoku shiro (2004)    0.1246
+24 (2001)                      0.1222
+dtype: float64
+========================================
+
+
+========================================
+Item 72: Eternal Sunshine of the Spotless Mind (2004)
+========================================
+Similar Items:
+There Will Be Blood (2007)           0.1981
+Avatar: The Last Airbender (2003)    0.1235
+El secreto de sus ojos (2009)        0.1170
+Snatch (2000)                        0.0992
+Inception (2010)                     0.0980
+dtype: float64
+========================================
+
+
+========================================
+Item 73: Californication (2007)
+========================================
+Similar Items:
+The Punisher (2017)                                         0.1640
+Whiplash (2014)                                             0.1440
+The Lord of the Rings: The Fellowship of the Ring (2001)    0.1386
+Community (2009)                                            0.1330
+Interstellar (2014)                                         0.1320
+dtype: float64
+========================================
+
+
+========================================
+Item 74: Toy Story 3 (2010)
+========================================
+Similar Items:
+True Detective (2014)                       0.1503
+It's Always Sunny in Philadelphia (2005)    0.1454
+Spartacus: Blood and Sand (2010)            0.1340
+Community (2009)                            0.1185
+Amores perros (2000)                        0.0992
+dtype: float64
+========================================
+
+
+========================================
+Item 75: Jagten (2012)
+========================================
+Similar Items:
+Rome (2005)                             0.1481
+Community (2009)                        0.1100
+Sen to Chihiro no kamikakushi (2001)    0.0980
+Spartacus: Blood and Sand (2010)        0.0961
+Inception (2010)                        0.0938
+dtype: float64
+========================================
+
+
+========================================
+Item 76: The Walking Dead (2010)
+========================================
+Similar Items:
+Firefly (2002)            0.1260
+Warrior (2011)            0.1245
+The Punisher (2017)       0.1193
+Game of Thrones (2011)    0.1166
+Fargo (2014)              0.1046
+dtype: float64
+========================================
+
+
+========================================
+Item 77: Requiem for a Dream (2000)
+========================================
+Similar Items:
+The Handmaid's Tale (2017)    0.1107
+Before Sunset (2004)          0.1071
+There Will Be Blood (2007)    0.1026
+Amores perros (2000)          0.1016
+Community (2009)              0.0933
+dtype: float64
+========================================
+
+
+========================================
+Item 78: Homeland (2011)
+========================================
+Similar Items:
+Snatch (2000)                                   0.1695
+How I Met Your Mother (2005)                    0.1334
+Inside Out (2015)                               0.1282
+The Lord of the Rings: The Two Towers (2002)    0.1271
+Room (2015)                                     0.1156
+dtype: float64
+========================================
+
+
+========================================
+Item 79: Snatch (2000)
+========================================
+Similar Items:
+Room (2015)                     0.1714
+Homeland (2011)                 0.1695
+The Dark Knight Rises (2012)    0.1524
+Mr. Robot (2015)                0.1368
+Inception (2010)                0.1230
+dtype: float64
+========================================
+
+
+========================================
+Item 80: Batman Begins (2005)
+========================================
+Similar Items:
+Der Untergang (2004)                               0.1620
+The Help (2011)                                    0.1061
+24 (2001)                                          0.1039
+Three Billboards Outside Ebbing,Missouri (2017)    0.1030
+Firefly (2002)                                     0.1020
+dtype: float64
+========================================
+
+
+========================================
+Item 81: Hauru no ugoku shiro (2004)
+========================================
+Similar Items:
+Whiplash (2014)            0.1258
+Amélie (2001)              0.1246
+Better Call Saul (2015)    0.1091
+The Punisher (2017)        0.1066
+House M.D. (2004)          0.1048
+dtype: float64
+========================================
+
+
+========================================
+Item 82: There Will Be Blood (2007)
+========================================
+Similar Items:
+Eternal Sunshine of the Spotless Mind (2004)    0.1981
+Donnie Darko (2001)                             0.1309
+Cidade de Deus (2002)                           0.1279
+24 (2001)                                       0.1148
+Interstellar (2014)                             0.1117
+dtype: float64
+========================================
+
+
+========================================
+Item 83: Der Untergang (2004)
+========================================
+Similar Items:
+Batman Begins (2005)       0.1620
+Supernatural (2005)        0.1586
+The Prestige (2006)        0.1342
+The Intouchables (2011)    0.1012
+Fargo (2014)               0.1009
+dtype: float64
+========================================
+
+
+========================================
+Item 84: Warrior (2011)
+========================================
+Similar Items:
+Fargo (2014)                  0.1415
+The Walking Dead (2010)       0.1245
+Narcos (2015)                 0.1165
+The Big Bang Theory (2007)    0.1111
+La casa de papel (2017)       0.1110
+dtype: float64
+========================================
+
+
+========================================
+Item 85: Room (2015)
+========================================
+Similar Items:
+Snatch (2000)                                   0.1714
+The Dark Knight Rises (2012)                    0.1244
+Homeland (2011)                                 0.1156
+Eternal Sunshine of the Spotless Mind (2004)    0.0968
+House of Cards (2013)                           0.0925
+dtype: float64
+========================================
+
+
+========================================
+Item 86: Inside Out (2015)
+========================================
+Similar Items:
+The Punisher (2017)            0.1462
+Homeland (2011)                0.1282
+Inglourious Basterds (2009)    0.1244
+Mad Men (2007)                 0.1156
+24 (2001)                      0.1139
+dtype: float64
+========================================
+
+
+========================================
+Item 87: V for Vendetta (2005)
+========================================
+Similar Items:
+3 Idiots (2009)            0.1619
+WALL·E (2008)              0.1310
+Whiplash (2014)            0.1129
+Better Call Saul (2015)    0.1034
+The Dark Knight (2008)     0.0944
+dtype: float64
+========================================
+
+
+========================================
+Item 88: The Big Bang Theory (2007)
+========================================
+Similar Items:
+Warrior (2011)                              0.1111
+Scrubs (2001)                               0.1105
+The Handmaid's Tale (2017)                  0.1070
+It's Always Sunny in Philadelphia (2005)    0.1068
+A Beautiful Mind (2001)                     0.1004
+dtype: float64
+========================================
+
+
+========================================
+Item 89: Pan's Labyrinth (2006)
+========================================
+Similar Items:
+Parks and Recreation (2009)      0.0970
+El secreto de sus ojos (2009)    0.0801
+Inside Out (2015)                0.0780
+Jagten (2012)                    0.0766
+WALL·E (2008)                    0.0742
+dtype: float64
+========================================
+
+
+========================================
+Item 90: Three Billboards Outside Ebbing,Missouri (2017)
+========================================
+Similar Items:
+Mindhunter (2017)       0.1452
+The Office (2005)       0.1389
+Community (2009)        0.1110
+Batman Begins (2005)    0.1030
+Supernatural (2005)     0.0977
+dtype: float64
+========================================
+
+
+========================================
+Item 91: The Wolf of Wall Street (2013)
+========================================
+Similar Items:
+Boardwalk Empire (2010)      0.1323
+Fringe (2008)                0.1122
+Suits (2011)                 0.1112
+Dexter (2006)                0.1090
+Mad Max: Fury Road (2015)    0.1067
+dtype: float64
+========================================
+
+
+========================================
+Item 92: A Beautiful Mind (2001)
+========================================
+Similar Items:
+The Dark Knight (2008)    0.1607
+Narcos (2015)             0.1412
+24 (2001)                 0.1235
+Amores perros (2000)      0.1156
+Up (2009)                 0.1117
+dtype: float64
+========================================
+
+
+========================================
+Item 93: El secreto de sus ojos (2009)
+========================================
+Similar Items:
+The Dark Knight (2008)                          0.1504
+Eternal Sunshine of the Spotless Mind (2004)    0.1170
+The Prestige (2006)                             0.1084
+How I Met Your Mother (2005)                    0.0941
+Boardwalk Empire (2010)                         0.0885
+dtype: float64
+========================================
+
+
+========================================
+Item 94: Mad Max: Fury Road (2015)
+========================================
+Similar Items:
+3 Idiots (2009)                      0.1838
+Doctor Who (2005)                    0.1079
+Before Sunset (2004)                 0.1076
+The Wolf of Wall Street (2013)       0.1067
+Avatar: The Last Airbender (2003)    0.1031
+dtype: float64
+========================================
+
+
+========================================
+Item 95: The Help (2011)
+========================================
+Similar Items:
+Sen to Chihiro no kamikakushi (2001)        0.1709
+Vikings (2013)                              0.1520
+The Dark Knight (2008)                      0.1243
+Amélie (2001)                               0.1194
+It's Always Sunny in Philadelphia (2005)    0.1188
+dtype: float64
+========================================
+
+
+========================================
+Item 96: Amores perros (2000)
+========================================
+Similar Items:
+Suits (2011)               0.1827
+A Beautiful Mind (2001)    0.1156
+Narcos (2015)              0.1096
+Six Feet Under (2001)      0.1087
+The Punisher (2017)        0.1071
+dtype: float64
+========================================
+
+
+========================================
+Item 97: Donnie Darko (2001)
+========================================
+Similar Items:
+Cidade de Deus (2002)                0.1989
+Avatar: The Last Airbender (2003)    0.1892
+Mad Men (2007)                       0.1370
+There Will Be Blood (2007)           0.1309
+Westworld (2016)                     0.1262
+dtype: float64
+========================================
+
+
+========================================
+Item 98: Before Sunset (2004)
+========================================
+Similar Items:
+Boardwalk Empire (2010)      0.1191
+Oldeuboi (2003)              0.1140
+3 Idiots (2009)              0.1125
+WALL·E (2008)                0.1102
+Mad Max: Fury Road (2015)    0.1076
+dtype: float64
+========================================
+
+
+========================================
+Item 99: American Horror Story (2011)
+========================================
+Similar Items:
+La casa de papel (2017)        0.1178
+Scrubs (2001)                  0.1116
+Inglourious Basterds (2009)    0.1081
+Mindhunter (2017)              0.0943
+Supernatural (2005)            0.0895
+dtype: float64
+========================================
+
+
